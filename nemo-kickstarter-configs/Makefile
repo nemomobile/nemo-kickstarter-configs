@@ -6,11 +6,13 @@ all:
 install:
 	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/adaptations  
 	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/base
-	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/latest
+	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/release-latest
+	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/release-next
 	mkdir -p $(DESTDIR)/usr/share/kickstarter-configs/nemo/scripts
 	cp adaptations/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/adaptations/
 	cp base/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/base/
-	cp latest/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/latest/
+	cp release-latest/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/release-latest/
+	cp release-next/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/release-next/
 	cp scripts/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/scripts/
 
 clean:

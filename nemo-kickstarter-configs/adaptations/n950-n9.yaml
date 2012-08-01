@@ -15,4 +15,4 @@ Nemo Adaptation N950 N9:
         - meego-handset-camera
         - xorg-x11-xauth
     PostScripts:
-        - nocursor
+        - nocursor.post

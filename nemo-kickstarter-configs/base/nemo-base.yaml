@@ -4,13 +4,11 @@ ExternalConfigs:
   - /usr/share/kickstarter-configs
   # Mer configs base
   - /usr/share/kickstarter-configs/mer
-  # Nemo base
-  - /usr/share/kickstarter-configs/nemo
   # post/nochroot scripts
-  - /usr/share/kickstarter-configs/nemo/post
-  # Nemo Adaptations
+  - /usr/share/kickstarter-configs/nemo/scripts
+  # Nemo Hardware Adaptations
   - /usr/share/kickstarter-configs/nemo/adaptations
-  
+
 Nemo Base:
   RootPass: nemo
   DefaultUser: nemo
@@ -19,7 +17,7 @@ Nemo Base:
   NoChrootScripts:
     - buildname.nochroot
   Active: True
-  
+
 Nemo Handset:
   Repos:
       - ce-utils

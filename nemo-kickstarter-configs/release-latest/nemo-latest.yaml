@@ -1,7 +1,5 @@
 ExternalConfigs:
-  - ./base/
-  - ./scripts/
-  - ./adaptations/
+  - /usr/share/kickstarter-configs/nemo/base/
   
 Repositories:
     -   Name: ce-adaptation-x86-generic
