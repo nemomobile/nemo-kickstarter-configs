@@ -19,7 +19,7 @@ Nemo Base:
   NoChrootScripts:
     - buildname.nochroot
   Active: True
-
+  
 Nemo Handset:
   Repos:
       - ce-utils
@@ -69,6 +69,7 @@ Configurations:
   - Name: Nemo Handset N900
     FileName: handset-armv7hl-n900
     Inherit:
+        - ARMv7 hardfp architecture
         - Mer Base System
         - Mer Connectivity
         - Mer Xorg enablement
@@ -97,13 +98,13 @@ Configurations:
 
   - Name: Nemo Handset N950
     FileName: handset-armv7hl-n950
-    Architecture: armv7hl
     Inherit:
+        - ARMv7 hardfp architecture
         - Mer Base System
         - Mer Connectivity
         - Mer Xorg enablement
         - Nemo Base
-        - Nemo Adaptation N900
+        - Nemo Adaptation N950 N9
         - Nemo Handset
     ExtraPackages:
         - usb-moded-config-n950-n9
@@ -119,8 +120,8 @@ Configurations:
 
   - Name: Nemo Handset Pandaboard
     FileName: handset-armv7l-pandaboard
-    Architecture: armv7l
     Inherit:
+        - ARMv7 softfp architecture
         - Mer Base System
         - Mer Connectivity
         - Mer Xorg enablement
@@ -134,9 +135,9 @@ Configurations:
         
   - Name: Nemo Handset i586 Virtual Machine
     FileName: handset-i586-vm
-    Architecture: i686
     RepositoryArchitecture: i586
     Inherit:
+        - SSSE3 enabled X86 architecture
         - Mer Base System
         - Mer Connectivity
         - Mer Xorg enablement
@@ -146,9 +147,9 @@ Configurations:
 
   - Name: Nemo Handset i586
     FileName: handset-i586
-    Architecture: i686
     RepositoryArchitecture: i586
     Inherit:
+        - SSSE3 enabled X86 architecture
         - Mer Base System
         - Mer Connectivity
         - Mer Xorg enablement
