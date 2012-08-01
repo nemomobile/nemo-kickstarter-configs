@@ -1,0 +1,5 @@
+# Prelink can reduce boot time
+if [ -x /usr/sbin/prelink ]; then
+    /usr/sbin/prelink -aRqm
+fi
+

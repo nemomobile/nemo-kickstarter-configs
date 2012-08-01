@@ -1,0 +1,2 @@
+# Doing some swap configurations.
+echo 'vm.swappiness = 80' >> /etc/sysctl.conf

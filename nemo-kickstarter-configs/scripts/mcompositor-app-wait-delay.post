@@ -1,0 +1,3 @@
+# Wait a bit more than the default 5s when starting application.
+mkdir -p /etc/xdg/mcompositor/
+echo "close-timeout-ms 15000;" > /etc/xdg/mcompositor/new-mcompositor.conf

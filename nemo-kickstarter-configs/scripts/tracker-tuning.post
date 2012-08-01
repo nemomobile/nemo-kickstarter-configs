@@ -1,0 +1,2 @@
+# Tune tracker a bit.
+sed -i "s|Exec=|Exec=/usr/bin/ionice -c 3 -n 7 |g" /etc/xdg/autostart/tracker-miner-fs.desktop

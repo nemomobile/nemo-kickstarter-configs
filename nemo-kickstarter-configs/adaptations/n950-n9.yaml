@@ -1,0 +1,20 @@
+Nemo Adaptation N950 N9:
+    PartSize: 3500
+    FileSystem: ext3
+    Kernel: kernel-adaptation-n950
+    Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - ce-adaptation-n9xx-common
+        - ce-adaptation-n950-n9
+    Groups:
+        - Nokia N950 Support
+        - Nokia N950 Proprietary Support
+    ExtraPackages:
+        - policy-settings-basic-n950
+        - mce
+        - meego-handset-camera
+        - xorg-x11-xauth
+    PostScripts:
+        - nocursor

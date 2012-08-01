@@ -1,0 +1,159 @@
+ExternalConfigs:
+  # First entry should be removed when 
+  # mer-kickstarter-configs is fixed.
+  - /usr/share/kickstarter-configs
+  # Mer configs base
+  - /usr/share/kickstarter-configs/mer
+  # Nemo base
+  - /usr/share/kickstarter-configs/nemo
+  # post/nochroot scripts
+  - /usr/share/kickstarter-configs/nemo/post
+  # Nemo Adaptations
+  - /usr/share/kickstarter-configs/nemo/adaptations
+  
+Nemo Base:
+  RootPass: nemo
+  DefaultUser: nemo
+  DefaultUserPass: nemo
+  RepositoryOptions: --save
+  NoChrootScripts:
+    - buildname.nochroot
+  Active: True
+
+Nemo Handset:
+  Repos:
+      - ce-utils
+      - ce-mw-shared
+      - ce-mw-mtf
+      - ce-apps
+      - ce-apps-mtf
+      - ce-ux-mtf
+      - ce-mtf-tracker-related-apps
+  Groups:
+      - Nemo Middleware Shared
+      - Nemo Utils
+      - Nemo Apps
+      - Nemo Apps MTF
+      - MTF Handset UX
+      - MTF Tracker Related Apps
+  PostScripts:
+      - plymouth-lite-ce.post
+      - uxlaunch-symlink-mtf.post
+  ExtraPackages:
+      - openssh-clients
+      - openssh-server
+      - xterm
+      - ce-backgrounds
+      - plymouth-lite
+      - vim-enhanced
+
+Nemo XBMC:
+  Repos:
+      - ce-utils
+      - ce-mw-shared
+      - ce-ux-xbmc
+      - ce-apps
+  Group:
+      - Nemo Utils
+  ExtraPackages:
+      - xbmc
+      - openssh-clients
+      - openssh-server
+      - ce-backgrounds
+      - plymouth-lite
+      - vim-enhanced
+  PostScripts:
+      - uxlaunch-symlink-xbmc.post
+
+Configurations:
+  - Name: Nemo Handset N900
+    FileName: handset-armv7hl-n900
+    Inherit:
+        - Mer Base System
+        - Mer Connectivity
+        - Mer Xorg enablement
+        - Nemo Base
+        - Nemo Adaptation N900
+        - Nemo Handset
+    ExtraPackages:
+        # Wifi indicator needs this.
+        - contextkit-maemo-mce
+        # Adding n900 specific perf
+        # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
+        #- perf-adaptation-n900
+        # CE related n900 specific config so isn't in Nokia N900 Support.
+        - usb-moded-config-n900
+        - policy-settings-basic-n900
+        - mce
+        - meego-handset-camera
+        - xorg-x11-xauth
+    PostScripts:
+        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+        # we can't use the armv7nhl here
+        - arch-armv7hl.post
+        - meegotouch-n900.post
+        # We don't have so much power with N900 than others so we need to wait a bit longer
+        - mcompositor-app-wait-delay.post
+
+  - Name: Nemo Handset N950
+    FileName: handset-armv7hl-n950
+    Architecture: armv7hl
+    Inherit:
+        - Mer Base System
+        - Mer Connectivity
+        - Mer Xorg enablement
+        - Nemo Base
+        - Nemo Adaptation N900
+        - Nemo Handset
+    ExtraPackages:
+        - usb-moded-config-n950-n9
+        # Wifi indicator needs this.
+        - contextkit-maemo-mce
+    PostScripts:
+        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+        # we can't use the armv7nhl here
+        - arch-armv7hl.post
+        - meegotouch-n950.post
+        # We don't have so much power with N900 than others so we need to wait a bit longer
+        - mcompositor-app-wait-delay.post
+
+  - Name: Nemo Handset Pandaboard
+    FileName: handset-armv7l-pandaboard
+    Architecture: armv7l
+    Inherit:
+        - Mer Base System
+        - Mer Connectivity
+        - Mer Xorg enablement
+        - Nemo Base
+        - Nemo Adaptation PandaBoard
+        - Nemo Handset
+    PostScripts:
+        - meegotouch-mouse-ptr.post
+        - pandaboard-sw-cursor-enable.post
+        - qt-graphicssystem-opengl.post
+        
+  - Name: Nemo Handset i586 Virtual Machine
+    FileName: handset-i586-vm
+    Architecture: i686
+    RepositoryArchitecture: i586
+    Inherit:
+        - Mer Base System
+        - Mer Connectivity
+        - Mer Xorg enablement
+        - Nemo Base
+        - Nemo Adaptation VM
+        - Nemo Handset
+
+  - Name: Nemo Handset i586
+    FileName: handset-i586
+    Architecture: i686
+    RepositoryArchitecture: i586
+    Inherit:
+        - Mer Base System
+        - Mer Connectivity
+        - Mer Xorg enablement
+        - Nemo Base
+        - Nemo Adaptation x86 generic
+        - Nemo Handset
+
+      
