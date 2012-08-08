@@ -1,3 +1,0 @@
-# work around for poor key import UI in PackageKit
-rm -f /var/lib/rpm/__db*
-rpm --rebuilddb
