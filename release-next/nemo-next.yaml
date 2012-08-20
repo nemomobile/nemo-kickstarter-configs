@@ -1,6 +1,9 @@
 ExternalConfigs:
   - /usr/share/kickstarter-configs/nemo/base/
 
+RepositoryURLVariables:
+    "@BUILD_ID@": next
+
 Repositories:
     -   Name: ce-adaptation-x86-generic
         Url:  http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core-next_@ARCH@/

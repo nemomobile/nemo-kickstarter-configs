@@ -2,6 +2,8 @@ Nemo Adaptation N900:
     Part: n900.partition
     Kernel: kernel-adaptation-n900
     Mic2Options: -f raw --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Inherit:
+        - ARMv7 hardfp architecture
     Repos:
         - ce-adaptation-n9xx-common
         - ce-adaptation-n900

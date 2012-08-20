@@ -1,16 +1,8 @@
 Nemo Adaptation x86 generic:
-    PartSize: 3000
-    FileSystem: ext3
-    Bootloader: True
-    BootloaderAppend: "quiet"
-    BootloaderTimeout: 0
-    StartX: True
-    Kernel: kernel-adaptation-pc
     Mic2Options: -f liveusb --record-pkgs=name --pkgmgr=yum
-    Repos:
-        - ce-adaptation-x86-generic
+    Inherit:
+        - Nemo x86 Common
     Groups:
         - Intel x86 Generic Support
-        - Mer Minimal Xorg
     PostScripts:
         - nocursor.post
