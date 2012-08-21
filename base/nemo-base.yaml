@@ -130,15 +130,15 @@ Configurations:
     FileName: handset-i586-vm
     RepositoryArchitecture: i586
     Inherit:
-        - Nemo Base
         - Nemo Adaptation VM
+        - Nemo Base
         - Nemo Handset
 
   - Name: Nemo Handset i586
     FileName: handset-i586
     RepositoryArchitecture: i586
     Inherit:
-        - Nemo Base
         - Nemo Adaptation x86 generic
+        - Nemo Base
         - Nemo Handset
 
