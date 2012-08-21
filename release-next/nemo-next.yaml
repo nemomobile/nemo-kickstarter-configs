@@ -30,9 +30,6 @@ Repositories:
     -   Name: ce-mw-shared
         Url:  http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core-next_@ARCH@/
 
-    -   Name: ce-mw-mtf
-        Url:  http://repo.pub.meego.com/CE:/MW:/MTF/Mer_Core-next_CE_MW_Shared_@ARCH@/
-
     -   Name: ce-ux-mtf
         Url:  http://repo.pub.meego.com/CE:/UX:/MTF/Mer_Core-next_CE_MW_MTF_@ARCH@/
 

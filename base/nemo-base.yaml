@@ -30,7 +30,6 @@ Nemo Handset:
   Repos:
       - ce-utils
       - ce-mw-shared
-      - ce-mw-mtf
       - ce-apps
       - ce-apps-mtf
       - ce-ux-mtf
