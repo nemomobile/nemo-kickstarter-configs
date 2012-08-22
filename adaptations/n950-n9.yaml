@@ -1,5 +1,5 @@
 Nemo Adaptation N950 N9:
-    PartSize: 3500
+    PartSize: 1500
     FileSystem: ext3
     Kernel: kernel-adaptation-n950
     Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum

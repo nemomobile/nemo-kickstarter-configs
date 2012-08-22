@@ -6,6 +6,7 @@ Nemo x86 Common:
     BootloaderTimeout: 0
     StartX: True
     Kernel: kernel-adaptation-pc
+    RepositoryArchitecture: i586
     Inherit:
         - SSSE3 enabled X86 architecture
     Repos:

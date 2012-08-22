@@ -6,22 +6,15 @@ ExternalConfigs:
   # Nemo Hardware Adaptations
   - /usr/share/kickstarter-configs/nemo/adaptations
 
-# Nemo Configs should be merged to Nemo Base
-# when kickstarter merges first the inherited lines
-# and only after that the lines thare in in the 
-# specific section.
-Nemo Configs:
+Nemo Base:
   RootPass: nemo
   DefaultUser: nemo
   DefaultUserPass: nemo
   RepositoryOptions: --save
-
-Nemo Base:
   Inherit:
       - Mer Base System
       - Mer Connectivity
       - Mer Xorg enablement
-      - Nemo Configs
   NoChrootScripts:
       - buildname.nochroot
   Active: True
@@ -75,8 +68,8 @@ Configurations:
     FileName: handset-armv7hl-n900
     Inherit:
         - Nemo Base
-        - Nemo Adaptation N900
         - Nemo Handset
+        - Nemo Adaptation N900
     ExtraPackages:
         # Wifi indicator needs this.
         - contextkit-maemo-mce
@@ -101,8 +94,8 @@ Configurations:
     FileName: handset-armv7hl-n950
     Inherit:
         - Nemo Base
-        - Nemo Adaptation N950 N9
         - Nemo Handset
+        - Nemo Adaptation N950 N9
     ExtraPackages:
         - usb-moded-config-n950-n9
         # Wifi indicator needs this.
@@ -119,8 +112,8 @@ Configurations:
     FileName: handset-armv7l-pandaboard
     Inherit:
         - Nemo Base
-        - Nemo Adaptation PandaBoard
         - Nemo Handset
+        - Nemo Adaptation PandaBoard
     PostScripts:
         - meegotouch-mouse-ptr.post
         - pandaboard-sw-cursor-enable.post
@@ -128,17 +121,15 @@ Configurations:
         
   - Name: Nemo Handset i586 Virtual Machine
     FileName: handset-i586-vm
-    RepositoryArchitecture: i586
     Inherit:
-        - Nemo Adaptation VM
         - Nemo Base
         - Nemo Handset
+        - Nemo Adaptation VM
 
   - Name: Nemo Handset i586
     FileName: handset-i586
-    RepositoryArchitecture: i586
     Inherit:
-        - Nemo Adaptation x86 generic
         - Nemo Base
         - Nemo Handset
+        - Nemo Adaptation x86 generic
 
