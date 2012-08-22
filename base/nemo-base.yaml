@@ -24,7 +24,6 @@ Nemo Handset:
       - ce-utils
       - ce-mw-shared
       - ce-apps
-      - ce-apps-mtf
       - ce-ux-mtf
       - ce-mtf-tracker-related-apps
   Groups:

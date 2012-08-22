@@ -39,8 +39,5 @@ Repositories:
     -   Name: ce-apps
         Url:  http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_@ARCH@/
 
-    -   Name: ce-apps-mtf
-        Url:  http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_@ARCH@/
-
     -   Name: ce-ux-xbmc
         Url:  http://repo.pub.meego.com/home:/sage:/xbmc/CE_UX_XBMC_@ARCH@/
