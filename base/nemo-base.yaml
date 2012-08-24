@@ -24,13 +24,11 @@ Nemo Handset:
       - ce-mw-shared
       - ce-apps
       - ce-ux-mtf
-      - ce-mtf-tracker-related-apps
   Groups:
       - Nemo Middleware Shared
       - Nemo Apps
       - Nemo Apps MTF
       - MTF Handset UX
-      - MTF Tracker Related Apps
   PostScripts:
       - plymouth-lite-ce.post
       - uxlaunch-symlink-mtf.post
