@@ -24,9 +24,6 @@ Repositories:
     -   Name: ce-adaptation-pandaboard
         Url:  http://repo.pub.meego.com/CE:/Adaptation:/PandaBoard/Mer_Core-next_@ARCH@/
 
-    -   Name: ce-utils
-        Url:  http://repo.pub.meego.com/CE:/Utils/Mer_Core-next_@ARCH@/
-
     -   Name: ce-mw-shared
         Url:  http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core-next_@ARCH@/
 

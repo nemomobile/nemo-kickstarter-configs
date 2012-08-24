@@ -21,14 +21,12 @@ Nemo Base:
 
 Nemo Handset:
   Repos:
-      - ce-utils
       - ce-mw-shared
       - ce-apps
       - ce-ux-mtf
       - ce-mtf-tracker-related-apps
   Groups:
       - Nemo Middleware Shared
-      - Nemo Utils
       - Nemo Apps
       - Nemo Apps MTF
       - MTF Handset UX
@@ -46,12 +44,9 @@ Nemo Handset:
 
 Nemo XBMC:
   Repos:
-      - ce-utils
       - ce-mw-shared
       - ce-ux-xbmc
       - ce-apps
-  Group:
-      - Nemo Utils
   ExtraPackages:
       - xbmc
       - openssh-clients
