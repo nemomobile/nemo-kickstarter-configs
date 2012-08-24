@@ -1,0 +1,18 @@
+This package requires:
+- Usage of Mer SDK
+- mer-kickstarter-configs configs package installed in Mer SDK
+- mer-kickstater package installed in Mer SDK
+
+Usage from git:
+
+# clone git tree
+git clone 
+cd nemo-kickstarter-configs
+sudo make install
+
+# Creating .ks files for nemo release based on Mer latest
+mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-latest/nemo-latest.yaml -o nemo-latest/
+
+# Creating .ks files for nemo release based on Mer next
+mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-latest/nemo-next.yaml -o nemo-next/
+
