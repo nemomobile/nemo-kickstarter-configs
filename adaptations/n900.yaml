@@ -9,7 +9,6 @@ Nemo Adaptation N900:
         - ce-adaptation-n900
     Groups:
         - Nokia N900 Support
-        - Nokia N900 Proprietary Support
     PostScripts:
         - fstab-n900.post
         # bq module causes instability, so removing for now.

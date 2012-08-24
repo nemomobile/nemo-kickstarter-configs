@@ -10,7 +10,6 @@ Nemo Adaptation N950 N9:
         - ce-adaptation-n950-n9
     Groups:
         - Nokia N950 Support
-        - Nokia N950 Proprietary Support
     ExtraPackages:
         - policy-settings-basic-n950
         - mce
