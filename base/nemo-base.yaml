@@ -27,7 +27,6 @@ Nemo Handset:
   Groups:
       - Nemo Middleware Shared
       - Nemo Apps
-      - Nemo Apps MTF
       - MTF Handset UX
   PostScripts:
       - plymouth-lite-ce.post
