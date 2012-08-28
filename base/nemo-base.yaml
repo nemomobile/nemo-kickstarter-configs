@@ -99,12 +99,15 @@ Configurations:
         - mcompositor-app-wait-delay.post
 
   - Name: Nemo Handset Pandaboard
-    FileName: handset-armv7l-pandaboard
+    FileName: handset-armv7hl-pandaboard
     Inherit:
         - Nemo Base
         - Nemo Handset
         - Nemo Adaptation PandaBoard
     PostScripts:
+        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+        # we can't use the armv7nhl here
+        - arch-armv7hl.post
         - meegotouch-mouse-ptr.post
         - pandaboard-sw-cursor-enable.post
         - qt-graphicssystem-opengl.post

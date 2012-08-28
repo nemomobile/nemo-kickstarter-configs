@@ -3,7 +3,7 @@ Nemo Adaptation PandaBoard:
     Kernel: kernel-adaptation-pandaboard
     Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
     Inherit:
-        - ARMv7 softfp architecture
+        - ARMv7 hardfp architecture
     Repos:
         - ce-adaptation-pandaboard
     ExtraPackages:
