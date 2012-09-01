@@ -114,15 +114,27 @@ Configurations:
         
   - Name: Nemo Handset i586 Virtual Machine
     FileName: handset-i586-vm
+    RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
         - Nemo Handset
         - Nemo Adaptation VM
+        - SSSE3 enabled X86 architecture
+
+  - Name: Nemo Handset i486 Virtual Machine
+    FileName: handset-i486-vm
+    Inherit:
+        - Nemo Base
+        - Nemo Handset
+        - Nemo Adaptation VM
+        - Generic X86 architecture
 
   - Name: Nemo Handset i586
     FileName: handset-i586
+    RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
         - Nemo Handset
         - Nemo Adaptation x86 generic
+        - SSSE3 enabled X86 architecture
 
