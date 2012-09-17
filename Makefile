@@ -16,7 +16,7 @@ install:
 	cp scripts/* $(DESTDIR)/usr/share/kickstarter-configs/nemo/scripts/
 
 clean:
-	rm */*~
+	rm -f */*~
 
 release:
 	git archive --format=tar --prefix=${NAME}-${VERSION}/ ${VERSION} | xz -z > ${NAME}-${VERSION}.tar.xz
