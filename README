@@ -14,5 +14,5 @@ sudo make install
 mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-latest/nemo-latest.yaml -o nemo-latest-ks/
 
 # Creating .ks files for nemo release based on Mer next
-mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-latest/nemo-next.yaml -o nemo-next-ks/
+mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-next/nemo-next.yaml -o nemo-next-ks/
 
