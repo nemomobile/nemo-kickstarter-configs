@@ -2,15 +2,6 @@ Nemo Adaptation VM:
     Mic2Options: -f livecd --record-pkgs=name --pkgmgr=yum
     Inherit:
         - Nemo x86 Common
-    # Very similar to x86 generic support package group.
-    ExtraPackages:
-        - acpid
-        - linux-firmware
-        - installer-shell
-        - xorg-x11-drv-mtev
-        - xorg-x11-drv-synaptics
-        - xorg-x11-drv-vesa
-        - mesa-llvmpipe-libGLESv2
-        - contextkit-meego-battery-upower
-        - xorg-x11-server-Xorg-setuid
+    Groups:
+        - Intel x86 VM Support
       
