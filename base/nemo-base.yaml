@@ -73,9 +73,6 @@ Configurations:
         - meego-handset-camera
         - xorg-x11-xauth
     PostScripts:
-        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
-        # we can't use the armv7nhl here
-        - arch-armv7hl.post
         - meegotouch-n900.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
@@ -91,9 +88,6 @@ Configurations:
         # Wifi indicator needs this.
         - contextkit-maemo-mce
     PostScripts:
-        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
-        # we can't use the armv7nhl here
-        - arch-armv7hl.post
         - meegotouch-n950.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
@@ -105,9 +99,6 @@ Configurations:
         - Nemo Handset
         - Nemo Adaptation PandaBoard
     PostScripts:
-        # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
-        # we can't use the armv7nhl here
-        - arch-armv7hl.post
         - meegotouch-mouse-ptr.post
         - pandaboard-sw-cursor-enable.post
         - qt-graphicssystem-opengl.post
