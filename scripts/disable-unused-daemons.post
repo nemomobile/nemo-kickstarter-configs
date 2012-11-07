@@ -1,3 +1,0 @@
-# We have some daemons that we do not need so lets disable them for now.
-mv /usr/lib/applauncherd/libqtbooster.so /root/
-mv /etc/xdg/autostart/msyncd.desktop /root/
