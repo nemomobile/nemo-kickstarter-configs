@@ -59,7 +59,7 @@ Configurations:
         - Nemo Adaptation N900
     ExtraPackages:
         # Wifi indicator needs this.
-        - contextkit-maemo-mce
+        - contextkit-plugin-mce
         # Adding n900 specific perf
         # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
         #- perf-adaptation-n900
@@ -83,7 +83,7 @@ Configurations:
     ExtraPackages:
         - usb-moded-config-n950-n9
         # Wifi indicator needs this.
-        - contextkit-maemo-mce
+        - contextkit-plugin-mce
     PostScripts:
         - meegotouch-n950.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
