@@ -30,7 +30,6 @@ Nemo Handset:
       - MTF Handset UX
   PostScripts:
       - plymouth-lite-ce.post
-      - uxlaunch-symlink-mtf.post
   ExtraPackages:
       - openssh-clients
       - openssh-server
@@ -50,8 +49,6 @@ Nemo XBMC:
       - ce-backgrounds
       - plymouth-lite
       - vim-enhanced
-  PostScripts:
-      - uxlaunch-symlink-xbmc.post
 
 Configurations:
   - Name: Nemo Handset N900

@@ -4,5 +4,3 @@ Nemo Adaptation x86 generic:
         - Nemo x86 Common
     Groups:
         - Intel x86 Generic Support
-    PostScripts:
-        - nocursor.post

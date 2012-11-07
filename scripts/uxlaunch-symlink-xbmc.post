@@ -1,2 +1,0 @@
-# Set symlink pointing to .desktop file 
-ln -sf XBMC.desktop /usr/share/xsessions/default.desktop
