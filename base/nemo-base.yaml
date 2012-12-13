@@ -10,8 +10,9 @@ Nemo Base:
   RootPass: nemo
   DefaultUser: nemo
   DefaultUserPass: nemo
-  Inherit:
-      - Mer Base System
+  Language: en_US.UTF-8        
+  Keyboard: us
+  Timezone: UTC
   NoChrootScripts:
       - buildname.nochroot
   Active: True
