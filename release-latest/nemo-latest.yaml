@@ -7,7 +7,6 @@ RepositoryURLVariables:
 Repositories:
     -   Name: mer-core
         Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
-        Options: --debuginfo
 
     -   Name: ce-adaptation-x86-generic
         Url:  http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_@ARCH@/
