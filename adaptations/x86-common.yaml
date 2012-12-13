@@ -5,9 +5,6 @@ Nemo x86 Common:
     BootloaderAppend: "quiet"
     BootloaderTimeout: 0
     StartX: True
-    Kernel: kernel-adaptation-pc
     Repos:
         - ce-adaptation-x86-generic
-    Groups:
-        - Mer Minimal Xorg
 

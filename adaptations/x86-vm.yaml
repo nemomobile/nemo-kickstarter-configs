@@ -3,5 +3,5 @@ Nemo Adaptation VM:
     Inherit:
         - Nemo x86 Common
     Groups:
-        - Intel x86 VM Support
+        - Nemo x86 VM
       

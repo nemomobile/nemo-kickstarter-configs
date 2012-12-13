@@ -3,4 +3,4 @@ Nemo Adaptation x86 generic:
     Inherit:
         - Nemo x86 Common
     Groups:
-        - Intel x86 Generic Support
+        - Nemo x86 Generic

@@ -9,7 +9,6 @@ Nemo Adaptation PandaBoard:
     ExtraPackages:
         - xorg-x11-server-Xorg-setuid
         - pulseaudio-module-x11 
-        - xorg-x11-xauth
         - pvr-omap4
         - pvr-omap4-kernel
         - pvr-omap4-libEGL

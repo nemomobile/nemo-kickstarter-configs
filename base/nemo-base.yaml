@@ -10,65 +10,23 @@ Nemo Base:
   RootPass: nemo
   DefaultUser: nemo
   DefaultUserPass: nemo
-  RepositoryOptions: --save
   Inherit:
       - Mer Base System
-      - Mer Connectivity
-      - Mer Xorg enablement
   NoChrootScripts:
       - buildname.nochroot
   Active: True
-
-Nemo Handset:
   Repos:
+      - mer-core
       - ce-mw-shared
       - ce-apps
       - ce-ux-mtf
-  Groups:
-      - Nemo Middleware Shared
-      - Nemo Apps
-      - MTF Handset UX
-  PostScripts:
-      - plymouth-lite-ce.post
-  ExtraPackages:
-      - openssh-clients
-      - openssh-server
-      - ce-backgrounds
-      - plymouth-lite
-      - vim-enhanced
-
-Nemo XBMC:
-  Repos:
-      - ce-mw-shared
-      - ce-ux-xbmc
-      - ce-apps
-  ExtraPackages:
-      - xbmc
-      - openssh-clients
-      - openssh-server
-      - ce-backgrounds
-      - plymouth-lite
-      - vim-enhanced
 
 Configurations:
   - Name: Nemo Handset N900
     FileName: handset-armv7hl-n900
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation N900
-    ExtraPackages:
-        # Wifi indicator needs this.
-        - contextkit-plugin-mce
-        # Adding n900 specific perf
-        # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
-        #- perf-adaptation-n900
-        # CE related n900 specific config so isn't in Nokia N900 Support.
-        - usb-moded-config-n900
-        - policy-settings-basic-n900
-        - mce
-        - meego-handset-camera
-        - xorg-x11-xauth
     PostScripts:
         - meegotouch-n900.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
@@ -78,12 +36,7 @@ Configurations:
     FileName: handset-armv7hl-n950
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation N950 N9
-    ExtraPackages:
-        - usb-moded-config-n950-n9
-        # Wifi indicator needs this.
-        - contextkit-plugin-mce
     PostScripts:
         - meegotouch-n950.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
@@ -93,7 +46,6 @@ Configurations:
     FileName: handset-armv7hl-pandaboard
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation PandaBoard
     PostScripts:
         - meegotouch-mouse-ptr.post
@@ -105,7 +57,6 @@ Configurations:
     RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
 
@@ -113,7 +64,6 @@ Configurations:
     FileName: handset-i486-vm
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation VM
         - Generic X86 architecture
 
@@ -122,7 +72,6 @@ Configurations:
     RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
-        - Nemo Handset
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
 
