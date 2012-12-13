@@ -21,6 +21,10 @@ Nemo Base:
       - ce-mw-shared
       - ce-apps
       - ce-ux-mtf
+  PostScripts:
+      - plymouth-lite-ce.post
+      - rpm-rebuilddb.post
+      - prelink.post
 
 Configurations:
   - Name: Nemo Handset N900
