@@ -24,7 +24,6 @@ Nemo Base:
   PostScripts:
       - plymouth-lite-ce.post
       - rpm-rebuilddb.post
-      - prelink.post
 
 Configurations:
   - Name: Nemo Handset N900
