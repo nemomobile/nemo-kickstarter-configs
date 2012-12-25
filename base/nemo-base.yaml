@@ -13,6 +13,7 @@ Nemo Base:
   Language: en_US.UTF-8        
   Keyboard: us
   Timezone: UTC
+  RepositoryOptions: --save
   NoChrootScripts:
       - buildname.nochroot
   Active: True
