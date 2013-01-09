@@ -8,11 +8,10 @@ Usage from git:
 # clone git tree
 git clone 
 cd nemo-kickstarter-configs
-sudo make install
 
 # Creating .ks files for nemo release based on Mer latest
-mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-latest/nemo-latest.yaml -o nemo-latest-ks/
+mer-kickstarter -e . -c release-latest/nemo-latest.yaml -o nemo-latest-ks/
 
 # Creating .ks files for nemo release based on Mer next
-mer-kickstarter -c /usr/share/kickstarter-configs/nemo/release-next/nemo-next.yaml -o nemo-next-ks/
+mer-kickstarter -e . -c release-next/nemo-next.yaml -o nemo-next-ks/
 
