@@ -1,6 +1,6 @@
 Nemo Adaptation N900:
     Part: n900.partition
-    Mic2Options: -f raw --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Mic2Options: -f raw --copy-kernel --record-pkgs=name --pkgmgr=zypp
     Inherit:
         - ARMv7 hardfp architecture
     Repos:
