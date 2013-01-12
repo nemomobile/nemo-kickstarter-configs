@@ -1,12 +1,15 @@
 This package requires:
 - Usage of Mer SDK
-- mer-kickstarter-configs configs package installed in Mer SDK
+- mer-kickstarter-configs configs package >= 0.3.1 installed in Mer SDK
 - mer-kickstater package installed in Mer SDK
 
-Usage from git:
+# Enter to the mer platform sdk
+
+# Install the required packages
+sudo zypper install mer-kickstarter mer-kickstarter-configs
 
 # clone git tree
-git clone 
+git clone https://github.com/nemomobile/nemo-kickstarter-configs.git 
 cd nemo-kickstarter-configs
 
 # Creating .ks files for nemo release based on Mer latest
