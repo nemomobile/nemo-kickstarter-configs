@@ -9,6 +9,5 @@ Nemo Adaptation N900:
     Groups:
         - Nemo N900
     PostScripts:
-        - fstab-n900.post
         # bq module causes instability, so removing for now.
         - n900-bq27x00_battery-removal.post
