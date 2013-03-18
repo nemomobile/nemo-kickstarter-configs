@@ -19,9 +19,9 @@ Nemo Base:
   Active: True
   Repos:
       - mer-core
-      - nemo-mw-shared
+      - nemo-mw
       - nemo-apps
-      - nemo-ux-mtf
+      - nemo-ux
   PostScripts:
       - plymouth-lite-ce.post
       - rpm-rebuilddb.post

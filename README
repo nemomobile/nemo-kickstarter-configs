@@ -12,9 +12,6 @@ sudo zypper install mer-kickstarter mer-kickstarter-configs
 git clone https://github.com/nemomobile/nemo-kickstarter-configs.git 
 cd nemo-kickstarter-configs
 
-# Creating .ks files for nemo release based on Mer latest
-mer-kickstarter -e . -c release-latest/nemo-latest.yaml -o nemo-latest-ks/
-
-# Creating .ks files for nemo release based on Mer next
-mer-kickstarter -e . -c release-next/nemo-next.yaml -o nemo-next-ks/
+# Creating .ks files for nemo release
+mer-kickstarter -c repos.yaml -o nemo-latest-ks/
 
