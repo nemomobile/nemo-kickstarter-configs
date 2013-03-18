@@ -6,29 +6,30 @@ ExternalConfigs:
 
 Repositories:
     -   Name: mer-core
-        Url:  http://releases.merproject.org/releases/@RELEASE@/builds/@ARCH@/packages
+        Url:  http://releases.merproject.org/releases/@MER_RELEASE@/builds/@ARCH@/packages
         Options: --debuginfo
 
     -   Name: nemo-adaptation-x86-generic
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/hw/x86/x86-common/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/hw/x86/x86-common/@ARCH@/packages/
 
     -   Name: nemo-adaptation-n900
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/hw/ti/omap3/n900/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/hw/ti/omap3/n900/@ARCH@/packages/
 
     -   Name: nemo-adaptation-n9xx-common
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/hw/ti/omap3/n9xx-common/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/hw/ti/omap3/n9xx-common/@ARCH@/packages/
 
     -   Name: nemo-adaptation-n950-n9
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/hw/ti/omap3/n950-n9/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/hw/ti/omap3/n950-n9/@ARCH@/packages/
 
     -   Name: nemo-adaptation-pandaboard
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/hw/ti/omap4/pandaboard/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/hw/ti/omap4/pandaboard/@ARCH@/packages/
 
     -   Name: nemo-mw
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/platform/mw/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/platform/mw/@ARCH@/packages/
 
     -   Name: nemo-ux
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/platform/ux/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/platform/ux/@ARCH@/packages/
 
     -   Name: nemo-apps
-        Url:  http://releases.nemomobile.org/snapshots/repos/@RELEASE@/platform/apps/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/@NEMO_RELEASE@/platform/apps/@ARCH@/packages/
+
