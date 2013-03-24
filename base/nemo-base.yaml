@@ -23,8 +23,8 @@ Nemo Base:
       - rpm-rebuilddb.post
 
 Configurations:
-  - Name: Nemo Handset N900
-    FileName: handset-armv7hl-n900
+  - Name: Nemo N900
+    FileName: nemo-armv7hl-n900
     Inherit:
         - Nemo Base
         - Nemo Adaptation N900
@@ -33,8 +33,8 @@ Configurations:
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
 
-  - Name: Nemo Handset N950
-    FileName: handset-armv7hl-n950
+  - Name: Nemo N950
+    FileName: nemo-armv7hl-n950
     Inherit:
         - Nemo Base
         - Nemo Adaptation N950 N9
@@ -43,8 +43,8 @@ Configurations:
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
 
-  - Name: Nemo Handset Pandaboard
-    FileName: handset-armv7hl-pandaboard
+  - Name: Nemo Pandaboard
+    FileName: nemo-armv7hl-pandaboard
     Inherit:
         - Nemo Base
         - Nemo Adaptation PandaBoard
@@ -53,23 +53,23 @@ Configurations:
         - pandaboard-sw-cursor-enable.post
         - qt-graphicssystem-opengl.post
         
-  - Name: Nemo Handset i586 Virtual Machine
-    FileName: handset-i586-vm
+  - Name: Nemo i586 Virtual Machine
+    FileName: nemo-i586-vm
     RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
 
-  - Name: Nemo Handset i486 Virtual Machine
-    FileName: handset-i486-vm
+  - Name: Nemo i486 Virtual Machine
+    FileName: nemo-i486-vm
     Inherit:
         - Nemo Base
         - Nemo Adaptation VM
         - Generic X86 architecture
 
-  - Name: Nemo Handset i586
-    FileName: handset-i586
+  - Name: Nemo i586
+    FileName: nemo-i586
     RepositoryArchitecture: i586
     Inherit:
         - Nemo Base
