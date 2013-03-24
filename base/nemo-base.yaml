@@ -9,13 +9,15 @@ Nemo Base:
   Language: en_US.UTF-8        
   Keyboard: us
   Timezone: UTC
-  RepositoryOptions: --save
   NoChrootScripts:
       - buildname.nochroot
   Active: True
   Repos:
       - mer-core
       - nemo-platform
+  ExtraPackages:
+      - ssu
+      - nemo-ssu-repos-release
   PostScripts:
       - plymouth-lite-ce.post
       - rpm-rebuilddb.post
@@ -26,6 +28,9 @@ Configurations:
     Inherit:
         - Nemo Base
         - Nemo Adaptation N900
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-release
+        - nemo-ssu-repos-adaptation-common-release
     PostScripts:
         - meegotouch-n900.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
@@ -36,6 +41,9 @@ Configurations:
     Inherit:
         - Nemo Base
         - Nemo Adaptation N950 N9
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-adaptation-release
     PostScripts:
         - meegotouch-n950.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
@@ -58,6 +66,8 @@ Configurations:
         - Nemo Base
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo i486 Virtual Machine
     FileName: nemo-i486-vm
@@ -65,6 +75,8 @@ Configurations:
         - Nemo Base
         - Nemo Adaptation VM
         - Generic X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo i586
     FileName: nemo-i586
@@ -73,4 +85,6 @@ Configurations:
         - Nemo Base
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
 
