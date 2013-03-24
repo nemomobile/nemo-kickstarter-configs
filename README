@@ -13,5 +13,5 @@ git clone https://github.com/nemomobile/nemo-kickstarter-configs.git
 cd nemo-kickstarter-configs
 
 # Creating .ks files for nemo release
-mer-kickstarter -c repos.yaml -o nemo-latest-ks/
+mer-kickstarter -c repos.yaml -o nemo-ks/
 
