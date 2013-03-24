@@ -1,10 +1,6 @@
 ExternalConfigs:
   # Mer configs base
   - /usr/share/kickstarter-configs/mer
-  # post/nochroot scripts
-  - /usr/share/kickstarter-configs/nemo/scripts
-  # Nemo Hardware Adaptations
-  - /usr/share/kickstarter-configs/nemo/adaptations
 
 Nemo Base:
   RootPass: nemo
