@@ -4,6 +4,7 @@ Nemo Adaptation PandaBoard:
     Mic2Options: -f raw --record-pkgs=name --pkgmgr=zypp
     Inherit:
         - ARMv7 hardfp architecture
+        - Nemo Base
     Repos:
         - nemo-adaptation-pandaboard
     ExtraPackages:
@@ -15,5 +16,10 @@ Nemo Adaptation PandaBoard:
         - pvr-omap4-libGLESv1
         - pvr-omap4-libGLESv2
         - u-boot-omap4panda
-        - x-loader-omap4panda
         - linux-firmware-ti-connectivity
+        - xorg-x11-drv-omap
+    PostScripts:
+        - meegotouch-mouse-ptr.post
+        - pandaboard-sw-cursor-enable.post
+        - qt-graphicssystem-opengl.post
+

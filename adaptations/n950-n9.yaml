@@ -4,8 +4,14 @@ Nemo Adaptation N950 N9:
     Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=zypp
     Inherit:
         - ARMv7 hardfp architecture
+        - Nemo Base
     Repos:
         - nemo-adaptation-n9xx-common
         - nemo-adaptation-n950-n9
     Groups:
         - Nemo N950
+    PostScripts:
+        - meegotouch-n950.post
+        # We don't have so much power with N900 than others so we need to wait a bit longer
+        - mcompositor-app-wait-delay.post
+

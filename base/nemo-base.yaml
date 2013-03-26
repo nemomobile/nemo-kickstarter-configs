@@ -15,6 +15,9 @@ Nemo Base:
   Repos:
       - mer-core
       - nemo-platform
+      - nemo-mw
+      - nemo-ux
+      - nemo-apps
   ExtraPackages:
       - ssu
       - nemo-ssu-repos-release
@@ -25,45 +28,61 @@ Nemo Base:
 Configurations:
   - Name: Nemo N900
     FileName: nemo-armv7hl-n900
+    ImageType: release
     Inherit:
-        - Nemo Base
         - Nemo Adaptation N900
     ExtraPackages:
         - nemo-ssu-repos-adaptation-release
         - nemo-ssu-repos-adaptation-common-release
-    PostScripts:
-        - meegotouch-n900.post
-        # We don't have so much power with N900 than others so we need to wait a bit longer
-        - mcompositor-app-wait-delay.post
+
+  - Name: Nemo N900 RND
+    FileName: nemo-armv7hl-n900-rnd
+    ImageType: rnd
+    Inherit:
+        - Nemo Adaptation N900
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-release
+        - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo N950
     FileName: nemo-armv7hl-n950
+    ImageType: release
     Inherit:
-        - Nemo Base
         - Nemo Adaptation N950 N9
     ExtraPackages:
         - nemo-ssu-repos-adaptation-common-release
         - nemo-ssu-repos-adaptation-release
-    PostScripts:
-        - meegotouch-n950.post
-        # We don't have so much power with N900 than others so we need to wait a bit longer
-        - mcompositor-app-wait-delay.post
 
-  - Name: Nemo Pandaboard
-    FileName: nemo-armv7hl-pandaboard
+  - Name: Nemo N950 RND
+    FileName: nemo-armv7hl-n950-rnd
+    ImageType: rnd
     Inherit:
-        - Nemo Base
+        - Nemo Adaptation N950 N9
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-adaptation-release
+
+  - Name: Nemo Pandaboard RND
+    FileName: nemo-armv7hl-pandaboard-rnd
+    ImageType: rnd
+    Inherit:
         - Nemo Adaptation PandaBoard
-    PostScripts:
-        - meegotouch-mouse-ptr.post
-        - pandaboard-sw-cursor-enable.post
-        - qt-graphicssystem-opengl.post
         
   - Name: Nemo i586 Virtual Machine
     FileName: nemo-i586-vm
+    ImageType: release
     RepositoryArchitecture: i586
     Inherit:
-        - Nemo Base
+        - Nemo Adaptation VM
+        - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
+
+  - Name: Nemo i586 Virtual Machine RND
+    FileName: nemo-i586-vm-rnd
+    ImageType: rnd
+    RepositoryArchitecture: i586
+    Inherit:
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
     ExtraPackages:
@@ -71,8 +90,17 @@ Configurations:
 
   - Name: Nemo i486 Virtual Machine
     FileName: nemo-i486-vm
+    ImageType: release
     Inherit:
-        - Nemo Base
+        - Nemo Adaptation VM
+        - Generic X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
+
+  - Name: Nemo i486 Virtual Machine RND
+    FileName: nemo-i486-vm-rnd
+    ImageType: rnd
+    Inherit:
         - Nemo Adaptation VM
         - Generic X86 architecture
     ExtraPackages:
@@ -80,9 +108,19 @@ Configurations:
 
   - Name: Nemo i586
     FileName: nemo-i586
+    ImageType: release
     RepositoryArchitecture: i586
     Inherit:
-        - Nemo Base
+        - Nemo Adaptation x86 generic
+        - SSSE3 enabled X86 architecture
+    ExtraPackages:
+        - nemo-ssu-repos-adaptation-common-release
+
+  - Name: Nemo i586 RND
+    FileName: nemo-i586-rnd
+    ImageType: rnd
+    RepositoryArchitecture: i586
+    Inherit:
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
     ExtraPackages:

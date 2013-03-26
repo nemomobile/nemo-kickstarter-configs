@@ -10,19 +10,32 @@ Repositories:
 
     -   Name: nemo-adaptation-x86-generic
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/x86/x86-common/@NEMO_RELEASE@/@ARCH@/
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/hw:/x86:/x86-common/@NEMO_RELEASE@_@ARCH@/
 
     -   Name: nemo-adaptation-n900
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap3/n900/@NEMO_RELEASE@/@ARCH@/
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/hw:/ti:/omap3:/n900/@NEMO_RELEASE@_@ARCH@/
 
     -   Name: nemo-adaptation-n9xx-common
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap3/n9xx-common/@NEMO_RELEASE@/@ARCH@/
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/hw:/ti:/omap3:/n9xx-common/@NEMO_RELEASE@_@ARCH@/
 
     -   Name: nemo-adaptation-n950-n9
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap3/n950-n9/@NEMO_RELEASE@/@ARCH@/
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/hw:/ti:/omap3:/n950-n9/@NEMO_RELEASE@_@ARCH@/
 
     -   Name: nemo-adaptation-pandaboard
-        Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap4/pandaboard/@NEMO_RELEASE@/@ARCH@/packages/
+        Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap4/pandaboard/@NEMO_RELEASE@/@ARCH@/
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/hw:/ti:/omap4:/pandaboard/@NEMO_RELEASE@_@ARCH@/
 
     -   Name: nemo-platform
-        Url:  http://releases.nemomobile.org/snapshots/repos/platform/@NEMO_RELEASE@/@ARCH@/
+        Url-release:  http://releases.nemomobile.org/snapshots/repos/platform/@NEMO_RELEASE@/@ARCH@/
 
+    -   Name: nemo-mw
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/mw/@NEMO_RELEASE@_@ARCH@/
+
+    -   Name: nemo-ux
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/ux/@NEMO_RELEASE@_@ARCH@/
+
+    -   Name: nemo-apps
+        Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@/apps/@NEMO_RELEASE@_@ARCH@/
