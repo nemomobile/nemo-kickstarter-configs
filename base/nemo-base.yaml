@@ -22,7 +22,6 @@ Nemo Base:
       - ssu
       - nemo-ssu-repos-release
   PostScripts:
-      - plymouth-lite-ce.post
       - rpm-rebuilddb.post
 
 Configurations:
@@ -67,6 +66,8 @@ Configurations:
     ImageType: rnd
     Inherit:
         - Nemo Adaptation PandaBoard
+    Groups:
+        - Nemo Complete
         
   - Name: Nemo i586 Virtual Machine
     FileName: nemo-i586-vm

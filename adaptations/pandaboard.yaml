@@ -9,7 +9,8 @@ Nemo Adaptation PandaBoard:
         - nemo-adaptation-pandaboard
     ExtraPackages:
         - xorg-x11-server-Xorg-setuid
-        - pulseaudio-module-x11 
+        - nemo-configs-pandaboard
+        - pulseaudio-module-x11
         - pvr-omap4
         - pvr-omap4-kernel
         - pvr-omap4-libEGL
@@ -18,8 +19,4 @@ Nemo Adaptation PandaBoard:
         - u-boot-omap4panda
         - linux-firmware-ti-connectivity
         - xorg-x11-drv-omap
-    PostScripts:
-        - meegotouch-mouse-ptr.post
-        - pandaboard-sw-cursor-enable.post
-        - qt-graphicssystem-opengl.post
 

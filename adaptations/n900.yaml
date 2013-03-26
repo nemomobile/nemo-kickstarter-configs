@@ -15,4 +15,5 @@ Nemo Adaptation N900:
         - meegotouch-n900.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
+        - plymouth-lite-ce.post
 

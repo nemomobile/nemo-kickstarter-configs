@@ -1,4 +1,0 @@
-# Set env variable to show cursor on MTF apps.
-cat > /etc/profile.d/mtf-mouse-ptr.sh << EOF
-export M_USE_SHOW_CURSOR=1
-EOF
