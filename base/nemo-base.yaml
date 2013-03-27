@@ -66,8 +66,6 @@ Configurations:
     ImageType: rnd
     Inherit:
         - Nemo Adaptation PandaBoard
-    Groups:
-        - Nemo Complete
         
   - Name: Nemo i586 Virtual Machine
     FileName: nemo-i586-vm
