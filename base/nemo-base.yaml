@@ -20,7 +20,6 @@ Nemo Base:
       - nemo-apps
   ExtraPackages:
       - ssu
-      - nemo-ssu-repos-release
   PostScripts:
       - rpm-rebuilddb.post
 
@@ -31,6 +30,7 @@ Configurations:
     Inherit:
         - Nemo Adaptation N900
     ExtraPackages:
+        - nemo-ssu-repos-release
         - nemo-ssu-repos-adaptation-release
         - nemo-ssu-repos-adaptation-common-release
 
@@ -40,8 +40,9 @@ Configurations:
     Inherit:
         - Nemo Adaptation N900
     ExtraPackages:
-        - nemo-ssu-repos-adaptation-release
-        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
 
   - Name: Nemo N950
     FileName: nemo-armv7hl-n950
@@ -49,6 +50,7 @@ Configurations:
     Inherit:
         - Nemo Adaptation N950 N9
     ExtraPackages:
+        - nemo-ssu-repos-release
         - nemo-ssu-repos-adaptation-common-release
         - nemo-ssu-repos-adaptation-release
 
@@ -58,14 +60,19 @@ Configurations:
     Inherit:
         - Nemo Adaptation N950 N9
     ExtraPackages:
-        - nemo-ssu-repos-adaptation-common-release
-        - nemo-ssu-repos-adaptation-release
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
+        - nemo-ssu-repos-adaptation-rnd
 
   - Name: Nemo Pandaboard RND
     FileName: nemo-armv7hl-pandaboard-rnd
     ImageType: rnd
     Inherit:
         - Nemo Adaptation PandaBoard
+    ExtraPackages:
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
+        - nemo-ssu-repos-adaptation-rnd
         
   - Name: Nemo i586 Virtual Machine
     FileName: nemo-i586-vm
@@ -75,6 +82,7 @@ Configurations:
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
     ExtraPackages:
+        - nemo-ssu-repos-release
         - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo i586 Virtual Machine RND
@@ -85,7 +93,8 @@ Configurations:
         - Nemo Adaptation VM
         - SSSE3 enabled X86 architecture
     ExtraPackages:
-        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
 
   - Name: Nemo i486 Virtual Machine
     FileName: nemo-i486-vm
@@ -94,6 +103,7 @@ Configurations:
         - Nemo Adaptation VM
         - Generic X86 architecture
     ExtraPackages:
+        - nemo-ssu-repos-release
         - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo i486 Virtual Machine RND
@@ -103,7 +113,8 @@ Configurations:
         - Nemo Adaptation VM
         - Generic X86 architecture
     ExtraPackages:
-        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
 
   - Name: Nemo i586
     FileName: nemo-i586
@@ -113,6 +124,7 @@ Configurations:
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
     ExtraPackages:
+        - nemo-ssu-repos-release
         - nemo-ssu-repos-adaptation-common-release
 
   - Name: Nemo i586 RND
@@ -123,5 +135,6 @@ Configurations:
         - Nemo Adaptation x86 generic
         - SSSE3 enabled X86 architecture
     ExtraPackages:
-        - nemo-ssu-repos-adaptation-common-release
+        - nemo-ssu-repos-rnd
+        - nemo-ssu-repos-adaptation-common-rnd
 
