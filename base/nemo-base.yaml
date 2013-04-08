@@ -47,7 +47,7 @@ Configurations:
     Inherit:
         - Nemo Adaptation N950 N9
 
-  - Name: Nemo Pandaboard RND
+  - Name: Nemo PandaBoard RND
     FileName: nemo-armv7hl-pandaboard-rnd
     ImageType: rnd
     Inherit:
