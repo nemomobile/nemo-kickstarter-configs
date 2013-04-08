@@ -6,7 +6,7 @@ Nemo Adaptation Nexus7:
         - ARMv7 hardfp architecture
         - Nemo Base
     Repos:
-        - nemo-devel-hw-nv-tegra3-common
-        - nemo-devel-hw-nv-tegra3-nexus7
+        - nemo-adaptation-tegra3-common
+        - nemo-adaptation-tegra3-nexus7
     Groups:
         - Nemo Nexus7

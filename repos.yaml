@@ -28,11 +28,11 @@ Repositories:
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/ti/omap4/pandaboard/@NEMO_RELEASE@/@ARCH@/
         Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/ti:/omap4:/pandaboard/@NEMO_RELEASE@_@ARCH@/
 
-    -   Name: nemo-devel-hw-nv-tegra3-common
+    -   Name: nemo-adaptation-tegra3-common
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/nv/tegra3/common/@NEMO_RELEASE@/@ARCH@/
         Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/nv:/tegra3:/common/latest_@ARCH@/
 
-    -   Name: nemo-devel-hw-nv-tegra3-nexus7
+    -   Name: nemo-adaptation-tegra3-nexus7
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/nv/tegra3/nexus7/@NEMO_RELEASE@/@ARCH@/
         Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/nv:/tegra3:/nexus7/latest_@ARCH@/
 
