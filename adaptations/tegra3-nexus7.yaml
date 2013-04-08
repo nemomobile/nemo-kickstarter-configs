@@ -1,0 +1,12 @@
+Nemo Adaptation Nexus7:
+    Part: nexus7.partition
+    Mic2Options: -f raw --record-pkgs=name --pkgmgr=zypp
+    Inherit:
+        - ARMv7 hardfp architecture
+        - Nemo Base
+    Repos:
+        - nemo-devel-hw-nv-tegra3-common
+        - nemo-devel-hw-nv-tegra3-nexus7
+    Kernel: kernel-adaptation-google-nexus7
+    Groups:
+        - Nemo Nexus7
