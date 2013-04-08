@@ -1,0 +1,8 @@
+if [ "@SSU_RELEASE_TYPE@" = "rnd" ]; then
+    [ -n "@NEMO_RELEASE@" ] && ssu release -r @NEMO_RELEASE@
+    [ -n "@FLAVOUR@" ] && ssu flavour @FLAVOUR@
+    ssu mode 2
+else
+    [ -n "@NEMO_RELEASE@" ] && ssu release @NEMO_RELEASE@
+    ssu mode 4
+fi

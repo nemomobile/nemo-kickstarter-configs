@@ -20,6 +20,7 @@ Nemo Base:
       - nemo-apps
   PostScripts:
       - rpm-rebuilddb.post
+      - ssu.post
 
 Configurations:
   - Name: Nemo N900
