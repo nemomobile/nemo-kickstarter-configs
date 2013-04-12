@@ -10,8 +10,6 @@ Nemo Adaptation N900:
     Groups:
         - Nemo N900
     PostScripts:
-        # bq module causes instability, so removing for now.
-        - n900-bq27x00_battery-removal.post
         - meegotouch-n900.post
         # We don't have so much power with N900 than others so we need to wait a bit longer
         - mcompositor-app-wait-delay.post
