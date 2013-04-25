@@ -1,0 +1,10 @@
+Nemo SB2:
+    PartSize: 1500
+    FileSystem: ext4
+    Mic2Options: -f fs --copy-kernel --record-pkgs=name --pkgmgr=zypp
+    Inherit:
+        - ARMv7 hardfp architecture
+        - Nemo Base
+    Groups:
+        - Nemo Complete
+

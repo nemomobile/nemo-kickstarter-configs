@@ -23,6 +23,12 @@ Nemo Base:
       - ssu.post
 
 Configurations:
+  - Name: Nemo SB2 rootfs
+    FileName: nemo-armv7hl-sb2-target
+    ImageType: release
+    Inherit:
+        - Nemo SB2
+
   - Name: Nemo N900
     FileName: nemo-armv7hl-n900
     ImageType: release
