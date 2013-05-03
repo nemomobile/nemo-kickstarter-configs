@@ -1,7 +1,7 @@
 This package requires:
 - Usage of Mer SDK
 - mer-kickstarter-configs configs package >= 0.3.1 installed in Mer SDK
-- mer-kickstater package installed in Mer SDK
+- mer-kickstater package >= 0.19 installed in Mer SDK
 
 # Enter to the mer platform sdk
 
