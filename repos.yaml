@@ -8,6 +8,9 @@ Repositories:
         Url:  http://releases.merproject.org/releases/@MER_RELEASE@/builds/@ARCH@/packages
         Options: --debuginfo
 
+    -   Name: mer-qt
+        Url-rnd:  http://repo.merproject.org/obs/mer:/qt:/@FLAVOUR@/@NEMO_RELEASE@_@ARCH@/
+
     -   Name: nemo-adaptation-x86-generic
         Url:  http://releases.nemomobile.org/snapshots/repos/hw/x86/x86-common/@NEMO_RELEASE@/@ARCH@/
         Url-rnd:  http://repo.merproject.org/obs/nemo:/@FLAVOUR@:/hw:/x86:/x86-common/@NEMO_RELEASE@_@ARCH@/
